@@ -39,7 +39,7 @@ const Hero = () => {
 
                     <div className="flex items-center gap-5">
                         <ButtonPrimary
-                            href='My Resume.pdf'
+                            href='Oluwatosin_Daniel_Resume.pdf'
                             download
                             label="Download CV"
                             icon={<MdDownload />}
