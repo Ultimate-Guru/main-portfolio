@@ -4,7 +4,7 @@
 
 import ProjectCard from "./ProjectCard";
 
-import project1 from '../assets/images/password.png'
+import project1 from '../assets/images/interface.png'
 import project2 from '../assets/images/myqr.png'
 import project3 from '../assets/images/mytesla.png'
 import project4 from '../assets/images/myestate.png'
@@ -14,9 +14,9 @@ import project6 from '../assets/images/myteens.png'
 const works = [
     {
         imgSrc: project1,
-        title: 'Password Strength Checker',
-        tags: ['Development'],
-        projectLink: 'https://password-strength-checker-three.vercel.app/'
+        title: 'Appointment Interface',
+        tags: ['Development', 'JSON'],
+        projectLink: 'https://react-interface-livid.vercel.app/'
     },
     {
         imgSrc: project2,

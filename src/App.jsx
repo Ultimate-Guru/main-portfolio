@@ -1,15 +1,95 @@
-// MIT License
+// // MIT License
 
+// // Copyright (c) 2024 Oluwatosin
+
+// // NODE MODULES
+// import { ReactLenis } from 'lenis/react';
+// import gsap from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { useGSAP } from '@gsap/react';
+// import { useEffect, useState } from 'react';
+
+// // REGISTER GSAP PLUGINS
+// gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+// // COMPONENTS
+// import Header from "./components/Header";
+// import Hero from "./components/Hero";
+// import About from "./components/About";
+// import Skills from "./components/Skills";
+// import Work from "./components/Work";
+// import Review from "./components/Review";
+// import Contact from "./components/Contact";
+// import Footer from "./components/Footer";
+// import Loader from './components/loader/Loader';
+
+// const App = () => {
+
+//     // loader state
+//     const [isLoading, setIsLoading] = useState(true);
+
+//     // Let create async method to fetch fake data
+//     useEffect(() => {
+//         const fakeDataFetch = () => {
+//             setTimeout(() => {
+//                 setIsLoading(false);
+//             }, 4000);
+//         };
+
+//         fakeDataFetch();
+//     }, []);
+
+//     useGSAP(() => {
+//         const elements = gsap.utils.toArray('.reveal-up');
+
+//         elements.forEach((element) => {
+//             gsap.to(element, {
+//                 scrollTrigger: {
+//                     trigger: element,
+//                     start: '-200 bottom',
+//                     end: 'bottom 80%',
+//                     scrub: true
+//                 },
+//                 y: 0,
+//                 opacity: 1,
+//                 duration: 1,
+//                 ease: 'power2.inOut',
+//             })
+//         });
+//     });
+
+//     return isLoading ? (
+//         <Loader />
+//     ) : (
+//         <ReactLenis root>
+//             <Header />
+//             <main>
+//                 <Hero />
+//                 <About />
+//                 <Skills />
+//                 <Work />
+//                 <Review />
+//                 <Contact />
+//             </main>
+//             <Footer />
+//         </ReactLenis>
+//     );
+// };
+
+// export default App;
+
+
+// MIT License
 // Copyright (c) 2024 Oluwatosin
 
 // NODE MODULES
 import { ReactLenis } from 'lenis/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
+import { useEffect, useState } from 'react';
 
 // REGISTER GSAP PLUGINS
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 // COMPONENTS
 import Header from "./components/Header";
@@ -20,29 +100,58 @@ import Work from "./components/Work";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Loader from './components/loader/Loader';
 
 const App = () => {
+    // Loader state
+    const [isLoading, setIsLoading] = useState(true);
 
-    useGSAP(() => {
-        const elements = gsap.utils.toArray('.reveal-up');
+    // Simulate data fetching with a fake loader
+    useEffect(() => {
+        const fakeDataFetch = () => {
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 4000);
+        };
 
-        elements.forEach((element) => {
-            gsap.to(element, {
-                scrollTrigger: {
-                    trigger: element,
-                    start: '-200 bottom',
-                    end: 'bottom 80%',
-                    scrub: true
-                },
-                y: 0,
-                opacity: 1,
-                duration: 1,
-                ease: 'power2.inOut',
-            })
-        });
-    });
+        fakeDataFetch();
+    }, []);
 
-    return (
+    // GSAP animations for `.reveal-up` elements
+    useEffect(() => {
+        if (!isLoading) {
+            const elements = gsap.utils.toArray('.reveal-up');
+
+            elements.forEach((element) => {
+                gsap.fromTo(
+                    element,
+                    { y: 50, opacity: 0 },
+                    {
+                        scrollTrigger: {
+                            trigger: element,
+                            start: '-200 bottom',
+                            end: 'bottom 80%',
+                            scrub: true,
+                        },
+                        y: 0,
+                        opacity: 1,
+                        duration: 1,
+                        ease: 'power2.inOut',
+                    }
+                );
+            });
+
+            // Remove preloading class from the body
+            document.body.classList.remove('preloading');
+        } else {
+            // Add preloading class to the body while the preloader is active
+            document.body.classList.add('preloading');
+        }
+    }, [isLoading]);
+
+    return isLoading ? (
+        <Loader />
+    ) : (
         <ReactLenis root>
             <Header />
             <main>
