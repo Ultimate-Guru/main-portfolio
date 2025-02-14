@@ -5,7 +5,7 @@
 import ProjectCard from "./ProjectCard";
 
 import project1 from '../assets/images/interface.png'
-import project2 from '../assets/images/myqr.png'
+import project2 from '../assets/images/space-img.png'
 import project3 from '../assets/images/mytesla.png'
 import project4 from '../assets/images/myestate.png'
 import project5 from '../assets/images/furnishop.png'
@@ -20,9 +20,9 @@ const works = [
     },
     {
         imgSrc: project2,
-        title: 'QR Code Generator',
-        tags: ['Development', 'Integration'],
-        projectLink: 'https://qr-code-generator-kappa-three.vercel.app/'
+        title: 'Responsive Space Website',
+        tags: ['Development', 'Intuitive Design'],
+        projectLink: 'https://space-website-swart.vercel.app/'
     },
     {
         imgSrc: project3,

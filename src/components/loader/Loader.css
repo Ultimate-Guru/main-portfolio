@@ -11,14 +11,22 @@
     align-items: center;
 }
 
-.loader svg {
-    width: 100%;
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.loading-text {
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-    transform: translate(.4rem);
-    margin-top: 1rem;
+.bouncing-logo {
+    width: auto;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
 }
