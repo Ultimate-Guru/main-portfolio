@@ -5,8 +5,7 @@
 import { useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 import Navabar from './Navbar'
-// import Logo from '../assets/images/My Logo.png'
-import Logo from '../assets/images/My_Logo-2.png'
+import Logo from '../assets/images/My_Logo-2 (2).png'
 
 const Header = () => {
 

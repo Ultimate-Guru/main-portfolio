@@ -2,7 +2,7 @@
 
 // Copyright (c) 2024 Oluwatosin
 
-import Logo from '../assets/images/My Logo.png'
+import Logo from '../assets/images/My_Logo-2.png'
 
 const aboutItems = [
     {
@@ -48,7 +48,7 @@ const About = () => {
                         alt="Logo" 
                         width={40}
                         height={40}
-                        className="ml-auto md:w-[70px] w-16 md:h-[50px] rounded-lg"
+                        className="ml-auto md:w-[100px] w-20 md:h-[60px]"
                         />
                     </div>
                 </div>
