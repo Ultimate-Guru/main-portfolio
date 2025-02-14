@@ -7,7 +7,7 @@ import Logo from '../assets/images/My_Logo-2.png'
 const aboutItems = [
     {
         label: 'Project done',
-        number: 95
+        number: 20
     },
     {
         label: 'Years of experience',
