@@ -5,7 +5,8 @@
 import { useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 import Navabar from './Navbar'
-import Logo from '../assets/images/My Logo.png'
+// import Logo from '../assets/images/My Logo.png'
+import Logo from '../assets/images/My_Logo-2.png'
 
 const Header = () => {
 
@@ -20,7 +21,7 @@ const Header = () => {
                        <img 
                         src={Logo} 
                         alt="Logo"
-                        className="rounded-xl md:w-24 w-16"
+                        className="md:w-32 lg:w-36 w-24"
                         />
                     </a>
                 </h1>

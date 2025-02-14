@@ -126,6 +126,7 @@ const Footer = () => {
                             width={40}
                             height={40}
                             alt="Logo"
+                            className="md:w-[70px] w-16 md:h-[50px] rounded-lg"
                         />
                     </a>
 
