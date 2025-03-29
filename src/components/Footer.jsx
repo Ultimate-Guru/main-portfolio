@@ -44,7 +44,7 @@ const socials = [
     },
     {
         label: 'Instagram',
-        href: 'https://www.instagram.com/oluwatosin00126/'
+        href: 'https://www.instagram.com/oluwatosindaniel_/'
     },
     {
         label: 'CodePen',
