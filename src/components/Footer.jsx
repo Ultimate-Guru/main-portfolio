@@ -65,7 +65,7 @@ const Footer = () => {
                         </h2>
 
                         <ButtonPrimary
-                            href='mailto:tosindaniel360@gmail.com'
+                            href='#contact'
                             label='Get in touch'
                             icon={<MdChevronRight />}
                             classes='reveal-up'
