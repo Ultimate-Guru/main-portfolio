@@ -4,7 +4,7 @@
 
 import { MdArrowDownward, MdDownload } from "react-icons/md";
 import HeroImg from "../assets/images/avatar.png";
-import HeroBanner from '../assets/images/myphoto.png'
+import HeroBanner from '../assets/images/image__2.png'
 import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const Hero = () => {
