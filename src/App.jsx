@@ -71,27 +71,21 @@ const App = () => {
         }
     }, [isLoading]);
 
-    return (
+    return isLoading ? (
+        <Loader />
+    ) : (
         <ReactLenis root>
-            {/* Analytics now renders immediately */}
+            <Header />
+            <main>
+                <Hero />
+                <About />
+                <Skills />
+                <Work />
+                <Review />
+                <Contact />
+            </main>
+            <Footer />
             <Analytics />
-            
-            {isLoading ? (
-                <Loader />
-            ) : (
-                <>
-                    <Header />
-                    <main>
-                        <Hero />
-                        <About />
-                        <Skills />
-                        <Work />
-                        <Review />
-                        <Contact />
-                    </main>
-                    <Footer />
-                </>
-            )}
         </ReactLenis>
     );
 };
