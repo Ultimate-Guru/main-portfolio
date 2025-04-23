@@ -57,7 +57,7 @@ const Hero = () => {
                         <img
                             src={HeroBanner}
                             alt="Oluwatosin Pic"
-                            className="w-full"
+                            className="w-full mr-36"
                             width={656}
                             height={800}
                         />
