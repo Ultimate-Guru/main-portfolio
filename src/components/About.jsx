@@ -2,7 +2,6 @@
 
 // Copyright (c) 2024 Oluwatosin
 
-// import Logo from '../assets/images/My_Logo-2.png'
 import HeroImg from "../assets/images/avatar.png";
 
 const aboutItems = [
