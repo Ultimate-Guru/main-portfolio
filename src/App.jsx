@@ -20,7 +20,6 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Review from "./components/Review";
-import Reference from "./components/Reference";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Loader from './components/loader/Loader';
@@ -83,7 +82,6 @@ const App = () => {
                 <Skills />
                 <Work />
                 <Review />
-                <Reference />
                 <Contact />
             </main>
             <Footer />
