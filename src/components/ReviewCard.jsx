@@ -78,10 +78,10 @@ const ReviewCard = ({ reviews }) => {
                     </div>
                 </SwiperSlide>
             ))}
-            <button className="custom-prev absolute left-1 top-28 transform -translate-y-1/2 z-10 w-8 h-8 bg-sky-400 hover:bg-sky-300 rounded-full flex items-center justify-center text-black text-xl">
+            <button className="custom-prev absolute left-1 top-1/2 transform -translate-y-1/2 z-10 w-8 h-8 bg-sky-400 hover:bg-sky-300 rounded-full flex items-center justify-center text-black text-xl">
                <MdArrowBack />
             </button>
-            <button className="custom-next absolute right-1 top-28 transform -translate-y-1/2 z-10 w-8 h-8 bg-sky-400 hover:bg-sky-300 rounded-full flex items-center justify-center text-black text-xl">
+            <button className="custom-next absolute right-1 top-1/2 transform -translate-y-1/2 z-10 w-8 h-8 bg-sky-400 hover:bg-sky-300 rounded-full flex items-center justify-center text-black text-xl">
               <MdArrowForward />
             </button>
         </Swiper>
