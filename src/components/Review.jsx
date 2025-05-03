@@ -16,7 +16,7 @@ const reviews = [
         imgSrc: people1,
     },
     {
-        content: "Impressive work! Fast loading times. Highly recommend.",
+        content: "Impressive work! Fast loading times. Highly recommended developer. Efficient and detail-oriented.",
         name: "Maxwell",
         imgSrc: people2,
     },
