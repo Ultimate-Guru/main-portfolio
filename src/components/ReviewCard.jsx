@@ -30,6 +30,7 @@ const ReviewCard = ({ reviews }) => {
             {reviews.map(({ content, imgSrc, name, company }, index) => (
                 <SwiperSlide key={index} className="h-full w-full max-w-full flex-shrink-0">
                     <div className="h-full w-full flex flex-col justify-between bg-zinc-800 p-6 rounded-2xl">
+                        
                         {/* Stars */}
                         <div className="flex items-center gap-1 mb-3">
                             {ratings.map(({ icon, style }, key) => (
@@ -46,7 +47,6 @@ const ReviewCard = ({ reviews }) => {
                         {/* Content */}
                         <p className="text-zinc-400 mb-8">{content}</p>
 
-                        {/* Footer */}
                         <div className="flex items-center gap-3 mt-auto">
                             <figure className="img-box rounded-lg">
                                 <img

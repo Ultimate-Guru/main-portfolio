@@ -7,7 +7,7 @@ import SkillCard from "./SkillCard";
 import htmlImg from "../assets/images/html.svg";
 import cssImg from "../assets/images/css3.svg";
 import jsImg from "../assets/images/javascript.svg";
-import nodeImg from "../assets/images/nodejs.svg";
+import gitImg from "../assets/images/gitimage.png";
 import reactImg from "../assets/images/react.svg";
 import tailwindImg from "../assets/images/tailwindcss.svg";
 
@@ -15,7 +15,7 @@ const skillItem = [
     { imgSrc: htmlImg, label: "HTML5", desc: "Web structure" },
     { imgSrc: cssImg, label: "CSS", desc: "User Interface" },
     { imgSrc: jsImg, label: "JavaScript", desc: "Interaction" },
-    { imgSrc: nodeImg, label: "NodeJS", desc: "Web Server" },
+    { imgSrc: gitImg, label: "Git", desc: "Version Control System" },
     { imgSrc: reactImg, label: "React", desc: "Framework" },
     { imgSrc: tailwindImg, label: "TailwindCSS", desc: "User Interface" },
 ];
