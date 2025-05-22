@@ -9,7 +9,7 @@ import project2 from '../assets/images/space-img.png'
 import project3 from '../assets/images/mytesla.png'
 import project4 from '../assets/images/myestate.png'
 import project5 from '../assets/images/furnishop.png'
-import project6 from '../assets/images/myteens.png'
+import project6 from '../assets/images/journal.png'
 
 const works = [
     {
@@ -44,9 +44,9 @@ const works = [
     },
     {
         imgSrc: project6,
-        title: 'RCCG Teens Testimony Site',
-        tags: ['Web-design', 'Development'],
-        projectLink: 'https://teen-website.vercel.app/'
+        title: 'Offline-Journal',
+        tags: ['Web-design', 'Development', 'Offline', 'Javascript'],
+        projectLink: 'https://offline-journal-iota.vercel.app/'
     },
 ];
 
