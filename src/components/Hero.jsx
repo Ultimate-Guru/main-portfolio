@@ -3,7 +3,7 @@
 // Copyright (c) 2024 Oluwatosin
 
 import { MdArrowDownward, MdDownload } from "react-icons/md";
-import HeroBanner from '../../public/svg.svg'
+import HeroBanner from '/svg.svg'
 import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const Hero = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
 
                     <div className="flex items-center gap-5">
                         <ButtonPrimary
-                            href='My-Resume.pdf'
+                            href='My_Resume.pdf'
                             download
                             label="Download CV"
                             icon={<MdDownload />}
