@@ -22,7 +22,7 @@ const reviews = [
     },
     {
         content: "Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.",
-        name: "Chidera",
+        name: "Daniel",
         imgSrc: people3,
     },
     {
@@ -37,7 +37,7 @@ const reviews = [
     },
     {
         content: "Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.",
-        name: "Emeka",
+        name: "Chris",
         imgSrc: people6,
     },
 ];
