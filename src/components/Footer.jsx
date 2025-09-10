@@ -4,7 +4,7 @@
 
 import { MdChevronRight } from "react-icons/md";
 import { ButtonPrimary } from "./Button";
-import Logo from '../assets/images/My Logo.png'
+import Logo from '../assets/images/My_Logo-2 (2).png'
 
 const sitemap = [
     {
@@ -40,15 +40,11 @@ const socials = [
     },
     {
         label: 'Twitter X',
-        href: 'https://twitter.com/Oluwatosin55902'
+        href: 'https://x.com/Tosin_Builds'
     },
     {
         label: 'Instagram',
-        href: 'https://www.instagram.com/oluwatosindaniel_/'
-    },
-    {
-        label: 'CodePen',
-        href: 'https://codepen.io/Oluwatosin-the-encoder'
+        href: 'https://instagram.com/tosin_builds'
     }
 ];
 
