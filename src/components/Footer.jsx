@@ -36,7 +36,7 @@ const socials = [
     },
     {
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/oluwatosin-daniel-6b9a2632b/'
+        href: 'https://linkedin.com/in/tosinbuilds'
     },
     {
         label: 'Twitter X',
