@@ -84,7 +84,6 @@ const Navbar = ({ navOpen }) => {
             <div
                 className="active-box"
                 ref={activeBox}>
-
             </div>
         </nav>
     )
