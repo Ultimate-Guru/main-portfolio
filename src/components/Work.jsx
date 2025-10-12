@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 import project1 from '../assets/images/interface.png'
 import project2 from '../assets/images/space-img.png'
-import project3 from '../assets/images/mytesla.png'
+import project3 from '../assets/images/remove-ease.vercel.app_.png'
 import project4 from '../assets/images/myestate.png'
 import project5 from '../assets/images/furnishop.png'
 import project6 from '../assets/images/agencyai.png'
@@ -26,9 +26,9 @@ const works = [
     },
     {
         imgSrc: project3,
-        title: 'Tesla Configuration',
-        tags: ['Development', 'Configuration'],
-        projectLink: 'https://tesla-configuration-plum.vercel.app/'
+        title: 'Background Removal',
+        tags: ['Development', 'Configuration', 'Integration', 'Responsive'],
+        projectLink: 'https://remove-ease.vercel.app/'
     },
     {
         imgSrc: project4,
