@@ -5,7 +5,7 @@
 import { useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 import Navabar from './Navbar'
-import Logo from '../assets/images/My_Logo-2 (2).png'
+import Logo from '../assets/images/tosin_builds-removed.png'
 
 const Header = () => {
 
@@ -17,10 +17,10 @@ const Header = () => {
 
                 <h1>
                     <a href="/" className="logo font-bold text-2xl md:text-3xl text-shadow">
-                       <img 
-                        src={Logo} 
-                        alt="Logo"
-                        className="md:w-32 lg:w-36 w-24"
+                        <img
+                            src={Logo}
+                            alt="Logo"
+                            className="md:w-32 lg:w-36 w-24"
                         />
                     </a>
                 </h1>
@@ -35,7 +35,7 @@ const Header = () => {
                         </span>
                     </button>
 
-                    <Navabar navOpen={navOpen}/>
+                    <Navabar navOpen={navOpen} />
                 </div>
 
                 <a href="#contact"
