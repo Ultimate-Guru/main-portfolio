@@ -3,12 +3,11 @@
 // Copyright (c) 2024 Oluwatosin
 
 import { MdArrowDownward, MdDownload } from "react-icons/md";
-import HeroBanner from '/svg.svg'
 import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const Hero = () => {
     return (
-        <section className="pt-28 lg:pt-40" id="home">
+        <section className="pt-28 lg:pt-28" id="home">
             <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
 
                 <div>
@@ -33,9 +32,9 @@ const Hero = () => {
                 </div>
 
                 <div className="hidden lg:block">
-                    <figure className="w-full max-w-[480px] bg-gradient-to-t from-sky-400 via-25% via-sky-400 to-65% rounded-[60px] overflow-hidden ml-10">
+                    <figure className="w-full max-w-[430px] bg-gradient-to-t from-sky-400 via-[25%] via-sky-400 to-[65%] rounded-[60px] overflow-hidden ml-auto">
                         <img
-                            src={HeroBanner}
+                            src='/my-image(2).png'
                             alt="Oluwatosin Pic"
                             className="w-full mr-36"
                             width={656}
