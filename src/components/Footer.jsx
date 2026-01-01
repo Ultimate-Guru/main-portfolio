@@ -4,7 +4,7 @@
 
 import { MdChevronRight } from "react-icons/md";
 import { ButtonPrimary } from "./Button";
-import Logo from '../assets/images/My_Logo-2 (2).png'
+import Logo from '../assets/images/tosin_builds-removed.png'
 
 const sitemap = [
     {
@@ -122,7 +122,7 @@ const Footer = () => {
                             width={40}
                             height={40}
                             alt="Logo"
-                            className="md:w-[70px] w-16 md:h-[50px] rounded-lg"
+                            className="md:w-28 lg:w-32 w-24 rounded-lg"
                         />
                     </a>
 
