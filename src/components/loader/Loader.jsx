@@ -3,7 +3,7 @@
 // Copyright (c) 2024 Oluwatosin
 
 import './Loader.css';
-import Logo from '../../assets/images/My_Logo-2 (2).png';
+import Logo from '../../assets/images/tosin_builds-removed.png';
 
 const Loader = () => {
     return (
