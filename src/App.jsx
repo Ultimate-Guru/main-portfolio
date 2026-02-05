@@ -5,7 +5,7 @@
 import { ReactLenis } from 'lenis/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 // REGISTER GSAP PLUGINS
 gsap.registerPlugin(ScrollTrigger);
@@ -22,26 +22,9 @@ import Work from "./components/Work";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Loader from './components/loader/Loader';
 
 const App = () => {
-    // Loader state
-    const [isLoading, setIsLoading] = useState(true);
-
-    // Simulate data fetching with a fake loader
     useEffect(() => {
-        const fakeDataFetch = () => {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 4000);
-        };
-
-        fakeDataFetch();
-    }, []);
-
-    // GSAP animations for `.reveal-up` elements
-    useEffect(() => {
-        if (!isLoading) {
             const elements = gsap.utils.toArray('.reveal-up');
 
             elements.forEach((element) => {
@@ -62,18 +45,9 @@ const App = () => {
                     }
                 );
             });
+        },[])
 
-            // Remove preloading class from the body
-            document.body.classList.remove('preloading');
-        } else {
-            // Add preloading class to the body while the preloader is active
-            document.body.classList.add('preloading');
-        }
-    }, [isLoading]);
-
-    return isLoading ? (
-        <Loader />
-    ) : (
+    return (
         <ReactLenis root>
             <Header />
             <main>
@@ -88,6 +62,7 @@ const App = () => {
             <Analytics />
         </ReactLenis>
     );
+
 };
 
 export default App;
