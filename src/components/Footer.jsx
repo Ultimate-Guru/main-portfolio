@@ -39,10 +39,6 @@ const socials = [
         href: 'https://linkedin.com/in/tosinbuilds'
     },
     {
-        label: 'Twitter X',
-        href: 'https://x.com/Tosin_Builds'
-    },
-    {
         label: 'Instagram',
         href: 'https://instagram.com/tosin_builds'
     }
