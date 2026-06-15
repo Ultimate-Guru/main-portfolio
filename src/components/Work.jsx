@@ -4,7 +4,7 @@
 
 import ProjectCard from "./ProjectCard";
 
-import project1 from '../assets/images/interface.png'
+import project1 from '../assets/images/satellite.png'
 import project2 from '../assets/images/space-img.png'
 import project3 from '../assets/images/remove-ease.vercel.app_.png'
 import project4 from '../assets/images/myestate.png'
@@ -14,14 +14,14 @@ import project6 from '../assets/images/agencyai.png'
 const works = [
     {
         imgSrc: project1,
-        title: 'Appointment Interface',
-        tags: ['Development', 'JSON'],
-        projectLink: 'https://react-interface-livid.vercel.app/'
+        title: 'Aptech Satellite Website',
+        tags: ['Form Integration', 'WhatsApp Integration', 'Responsive'],
+        projectLink: 'https://aptechsatellite.com/'
     },
     {
         imgSrc: project2,
         title: 'Responsive Space Website',
-        tags: ['Development', 'Intuitive Design'],
+        tags: ['Development', 'Intuitive Design', 'Responsive'],
         projectLink: 'https://space-website-swart.vercel.app/'
     },
     {
