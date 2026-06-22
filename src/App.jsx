@@ -27,27 +27,27 @@ import Footer from "./components/Footer";
 
 const App = () => {
     useEffect(() => {
-            const elements = gsap.utils.toArray('.reveal-up');
+        const elements = gsap.utils.toArray('.reveal-up');
 
-            elements.forEach((element) => {
-                gsap.fromTo(
-                    element,
-                    { y: 50, opacity: 0 },
-                    {
-                        scrollTrigger: {
-                            trigger: element,
-                            start: '-200 bottom',
-                            end: 'bottom 80%',
-                            scrub: true,
-                        },
-                        y: 0,
-                        opacity: 1,
-                        duration: 1,
-                        ease: 'power2.inOut',
-                    }
-                );
-            });
-        },[])
+        elements.forEach((element) => {
+            gsap.fromTo(
+                element,
+                { y: 50, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: element,
+                        start: '-200 bottom',
+                        end: 'bottom 80%',
+                        scrub: true,
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: 'power2.inOut',
+                }
+            );
+        });
+    }, [])
 
     return (
         <ReactLenis root>
@@ -73,6 +73,7 @@ const App = () => {
                 draggable
                 pauseOnHover
                 theme="dark"
+                className="!top-auto !right-4 !bottom-4 !left-auto"
             />
         </ReactLenis>
     );
