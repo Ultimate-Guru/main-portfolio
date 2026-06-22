@@ -132,3 +132,18 @@ body {
 .text-field::placeholder {
     @apply text-zinc-400
 }
+
+/* Custom Toastify Styles */
+.Toastify__toast--success {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    box-shadow: 0 8px 16px rgba(2, 132, 199, 0.3);
+}
+
+.Toastify__toast--success .Toastify__toast-icon {
+    color: #e0f2fe;
+}
+
+.Toastify__toast-body {
+    color: #f0f9ff;
+    font-weight: 500;
+}

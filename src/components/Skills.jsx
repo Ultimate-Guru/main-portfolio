@@ -10,6 +10,7 @@ import jsImg from "../assets/images/javascript.svg";
 import gitImg from "../assets/images/gitimage.png";
 import reactImg from "../assets/images/react.svg";
 import tailwindImg from "../assets/images/tailwindcss.svg";
+import getformImg from "../assets/images/form.png";
 
 const skillItem = [
     { imgSrc: htmlImg, label: "HTML5", desc: "Web structure" },
@@ -18,6 +19,7 @@ const skillItem = [
     { imgSrc: gitImg, label: "Git", desc: "Version Control System" },
     { imgSrc: reactImg, label: "React", desc: "Framework" },
     { imgSrc: tailwindImg, label: "TailwindCSS", desc: "User Interface" },
+    { imgSrc: getformImg, label: "GetForm(FormInit)", desc: "Form Handling" }
 ];
 
 const Skills = () => {
